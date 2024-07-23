@@ -21,7 +21,7 @@ def decodeAll():
         keyDict[i] = hexStringToNumList(keyDict[i])
 
     cipherList = hexStringToNumList("4143 4345 5353 2047 5241 4e54 4544 2100")
-    # "ACCESS GRANTED!" (with the "!" and the null byte)
+    # hex for "ACCESS GRANTED!" (with the "!" and the null byte)
 
     cipherList = xor128(cipherList, keyDict["494e"])
     printCipher(cipherList)
