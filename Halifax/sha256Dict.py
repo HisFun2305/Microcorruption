@@ -3,7 +3,7 @@ import hashlib
 hashDict = {}
 
 def main():
-    """Generates a hash dictionary for every byte (00 to ff) to find the byte corresponding to each hash"""
+    """Generates a hash dictionary for every byte (00 to ff) and  every two bytes (0000 to ffff) to find the byte(s) corresponding to each hash"""
     
     print("known hashes")
     knownHash = hashlib.sha256("".encode())
